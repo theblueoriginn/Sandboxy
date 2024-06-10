@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "88080158297",
+    "project_id": "sandboxy-b68b3",
+    "storage_bucket": "sandboxy-b68b3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88080158297:android:0cd1ea6c087100f49e6b48",
+        "android_client_info": {
+          "package_name": "com.amaru.sandboxy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCql_F4Jn2uDmjX_CSS24GVsZL-FAYvwkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

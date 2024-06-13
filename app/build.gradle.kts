@@ -38,10 +38,9 @@ android {
 
 dependencies {
     val appcompat_version = "1.7.0"
-    val lifecycle_version = "2.2.0"
     implementation("androidx.appcompat:appcompat:$appcompat_version")
     implementation("androidx.appcompat:appcompat-resources:$appcompat_version")
-
+    implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
     testImplementation(libs.junit)

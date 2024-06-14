@@ -39,5 +39,56 @@
             android:text="E-mail"
             android:id="@+id/TextView3"></TextView>
 
-    </androidx.appcompat.widget.Toolbar>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:text="E-mail"
+            android:id="@+id/TextView4"></EditText>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:text="Password"
+            android:id="@+id/TextView5"></TextView>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="120dp"
+            android:text="Password"
+            android:id="@+id/TextView6"></EditText>
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="200dp"
+            android:text="@string/sign_in"
+            ></Button>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="280dp"
+            android:text="Or Sign Up."
+            android:textColor="@color/link"
+            android:textStyle="italic"
+            android:line
+            android:textSize="20sp"
+            android:id="@+id/TextView2"
+            android:clickable="true"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

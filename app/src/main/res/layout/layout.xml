@@ -6,14 +6,38 @@
 
     android:id="@+id/constraintLayout"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/partial1">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/partial1"
+            app:layout_constraintTop_toTopOf="@+id/partial1"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="60dp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/TextView1"
+            ></TextView>
 
-    <androidx.appcompat.widget.Toolbar android:layout_width="0dp" android:layout_height="0dp"
-        app:layout_constraintStart_toStartOf="@id/constraintLayout" app:layout_constraintTop_toTopOf="@id/constraintLayout" app:layout_constraintEnd_toEndOf="@id/constraintLayout"
-        app:layout_constraintWidth_percent="0.33" app:layout_constraintHeight_percent="0.10"
-        app:layout_constraintHorizontal_bias="0.75"
-        app:title="Main Title" android:background="@color/purple_200"
-        android:id="@+id/appcompatToolbar"
-        >
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/partial2"
+        app:layout_constraintTop_toBottomOf="@id/partial1">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:text="E-mail"
+            android:id="@+id/TextView3"></TextView>
 
     </androidx.appcompat.widget.Toolbar>
 </androidx.constraintlayout.widget.ConstraintLayout>

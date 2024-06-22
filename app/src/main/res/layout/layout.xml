@@ -2,10 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
 
 
     android:id="@+id/constraintLayout"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainScreen">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,7 +39,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="30dp"
             android:text="E-mail"
-            android:id="@+id/TextView3"></TextView>
+            android:id="@+id/TextView2"></TextView>
 
 
         <EditText
@@ -48,7 +50,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="50dp"
             android:text="E-mail"
-            android:id="@+id/TextView4"></EditText>
+            android:id="@+id/EditText1"></EditText>
         <TextView
             android:layout_width="150dp"
             android:layout_height="30dp"
@@ -57,7 +59,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="100dp"
             android:text="Password"
-            android:id="@+id/TextView5"></TextView>
+            android:id="@+id/TextView3"></TextView>
         <EditText
             android:layout_width="250dp"
             android:layout_height="50dp"
@@ -66,7 +68,7 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="120dp"
             android:text="Password"
-            android:id="@+id/TextView6"></EditText>
+            android:id="@+id/EditText2"></EditText>
         <Button
             android:layout_width="160dp"
             android:layout_height="60dp"
@@ -86,9 +88,9 @@
             android:text="Or Sign Up."
             android:textColor="@color/link"
             android:textStyle="italic"
-            android:line
+
             android:textSize="20sp"
-            android:id="@+id/TextView2"
+            android:id="@+id/TextView4"
             android:clickable="true"></TextView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

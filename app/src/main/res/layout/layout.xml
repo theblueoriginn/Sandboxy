@@ -19,7 +19,7 @@
             app:layout_constraintTop_toTopOf="@+id/partial1"
             android:layout_marginStart="150dp"
             android:layout_marginTop="60dp"
-            android:text="Login"
+            android:text="Sign Up"
             android:textStyle="bold"
             android:textSize="30sp"
             android:id="@+id/TextView1"
@@ -50,7 +50,8 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="50dp"
             android:text="E-mail"
-            android:id="@+id/EditText1"></EditText>
+            android:id="@+id/EditText1"
+            android:inputType="textEmailAddress"></EditText>
         <TextView
             android:layout_width="150dp"
             android:layout_height="30dp"
@@ -68,15 +69,35 @@
             android:layout_marginStart="50dp"
             android:layout_marginTop="120dp"
             android:text="Password"
-            android:id="@+id/EditText2"></EditText>
+            android:id="@+id/EditText2"
+            android:inputType="textPassword"></EditText>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="170dp"
+            android:text="Username"
+            android:id="@+id/TextView4"></TextView>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="180dp"
+            android:text="Username"
+            android:id="@+id/EditText3"></EditText>
         <Button
             android:layout_width="160dp"
             android:layout_height="60dp"
             app:layout_constraintStart_toStartOf="@+id/partial2"
             app:layout_constraintTop_toTopOf="@+id/partial2"
             android:layout_marginStart="100dp"
-            android:layout_marginTop="200dp"
-            android:text="@string/sign_in"
+            android:layout_marginTop="220dp"
+            android:text ="@string/sign_up"
+            android:id="@+id/Button1"
             ></Button>
         <TextView
             android:layout_width="150dp"
@@ -85,12 +106,23 @@
             app:layout_constraintTop_toTopOf="@+id/partial2"
             android:layout_marginStart="110dp"
             android:layout_marginTop="280dp"
-            android:text="Or Sign Up."
+            android:text="Or Sign In."
             android:textColor="@color/link"
             android:textStyle="italic"
 
             android:textSize="20sp"
-            android:id="@+id/TextView4"
-            android:clickable="true"></TextView>
+            android:id="@+id/TextView5"
+            android:clickable="true"
+            ></TextView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="@+id/partial2"
+        app:layout_constraintTop_toTopOf="@+id/partial2"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="370dp"
+        android:text=""
+        android:id="@+id/TextView6"></TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>

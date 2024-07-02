@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:id="@+id/constraintLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainScreen"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/partial1"
+        >
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:visibility="invisible"
+            android:id="@+id/TextView0"
+            ></TextView>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/partial1"
+            app:layout_constraintTop_toTopOf="@+id/partial1"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="60dp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/TextView1"
+            ></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/partial2"
+        app:layout_constraintTop_toBottomOf="@id/partial1">
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:text="E-mail/Username"
+            android:id="@+id/TextView2"></TextView>
+
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:text="E-mail/Username"
+            android:id="@+id/EditText1"
+            android:inputType="textEmailAddress"
+            ></EditText>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:text="Password"
+            android:id="@+id/TextView3"></TextView>
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="120dp"
+            android:text="Password"
+            android:id="@+id/EditText2"
+            android:inputType="textPassword"></EditText>
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="220dp"
+            android:text ="SIGN IN"
+            android:id="@+id/Button1"
+            ></Button>
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            app:layout_constraintStart_toStartOf="@+id/partial2"
+            app:layout_constraintTop_toTopOf="@+id/partial2"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="280dp"
+            android:text="Or Sign Up"
+            android:textColor="@color/link"
+            android:textStyle="italic"
+
+            android:textSize="20sp"
+            android:id="@+id/TextView4"
+            android:clickable="true"
+            ></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

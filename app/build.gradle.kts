@@ -44,9 +44,14 @@ android {
 
 dependencies {
     val appcompat_version = "1.7.0"
+    val retrofit_version = "2.11.0"
     implementation("androidx.appcompat:appcompat:$appcompat_version")
     implementation("androidx.appcompat:appcompat-resources:$appcompat_version")
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
+    implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
+    implementation("com.squareup.retrofit2:converter-jackson:$retrofit_version")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
     testImplementation(libs.junit)
